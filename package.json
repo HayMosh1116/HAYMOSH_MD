@@ -1,24 +1,19 @@
 {
-  "name": "haymosh-session",
-  "version": "1.0.0",
-  "main": "./prince.js",
+  "name": "haywhy-session",
+  "main": "./haywhy.js",
   "type": "commonjs",
-  "engines": {
-    "node": ">=18.x"
-  },
   "scripts": {
-    "start": "node prince.js"
+    "start": "node haywhy.js"
   },
-  "author": "HayMosh",
-  "license": "MIT",
+  "author": "DEV_HAYWHY",
+  "license": "GPL-3.0",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:baileys@6.7.21",
+    "gifted-btns": "*",
     "body-parser": "*",
     "express": "*",
-    "gifted-btns": "*",
     "pino": "*",
     "pino-pretty": "^13.0.0",
-    "qrcode": "*",
-    "zlib": "*"
+    "qrcode": "*"
   }
 }
