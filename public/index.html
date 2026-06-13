@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAYMOSH SESSION GENERATOR</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: #0a0a0f;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 0 40px rgba(157, 80, 187, 0.4);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #9d50bb, #6e48aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        p.subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+        }
+        .card {
+            background: #13131f;
+            border: 1px solid #2a2a3f;
+            border-radius: 16px;
+            padding: 32px 28px;
+            width: 240px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #fff;
+        }
+        .card:hover {
+            border-color: #6e48aa;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(110, 72, 170, 0.3);
+        }
+        .card-icon { font-size: 36px; margin-bottom: 16px; }
+        .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .card-desc { font-size: 12px; color: #666; line-height: 1.5; }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 48px;
+            color: #444;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">👾</div>
+    <h1>HAYMOSH SESSION GENERATOR</h1>
+    <p class="subtitle">Generate your WhatsApp session ID to power your bot</p>
+
+    <div class="cards">
+        <a class="card" href="/pair">
+            <div class="card-icon">🔑</div>
+            <div class="card-title">Pair Code</div>
+            <div class="card-desc">Enter your phone number and get an 8-digit pair code</div>
+            <div class="badge">RECOMMENDED</div>
+        </a>
+        <a class="card" href="/qr-page">
+            <div class="card-icon">📷</div>
+            <div class="card-title">QR Code</div>
+            <div class="card-desc">Scan a QR code with your WhatsApp camera to link</div>
+        </a>
+    </div>
+
+    <footer>
+        Powered by HAYMOSH &bull; Built with Baileys
+    </footer>
+</body>
+</html>
